@@ -1,0 +1,18 @@
+﻿<MetaDataEntity>
+    <ComponentCategory>Function</ComponentCategory>
+    <Datas>
+        <MetaDataKeyValueEntity>
+            <Key>xml</Key>
+            <Value>&lt;ExpressionFunction language="zh-CN" VersionTime="" Version="1.0.0.0" IsFunctionComponent="0" DisplayType="Server" Runat="WinForm" MatchCode="ServerFunctions.DemoFunc" MatchVersion="1"&gt;
+  &lt;Function code="DemoFunc" name="服务端示例函数" isVisible="true" paramCount="2" returnType="number" typePath="系统函数|系统数字函数" processFunctionName="" isSecondaryDev="true"&gt;
+    &lt;Example&gt;&lt;![CDATA[]]&gt;&lt;/Example&gt;
+    &lt;Remark&gt;&lt;![CDATA[]]&gt;&lt;/Remark&gt;
+    &lt;Params&gt;
+      &lt;Param order="1" type="number" remark="加数1" isMust="0" /&gt;
+      &lt;Param order="2" type="number" remark="加数2" isMust="0" /&gt;
+    &lt;/Params&gt;
+  &lt;/Function&gt;
+&lt;/ExpressionFunction&gt;</Value>
+        </MetaDataKeyValueEntity>
+    </Datas>
+</MetaDataEntity>

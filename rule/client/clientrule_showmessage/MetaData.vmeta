@@ -1,0 +1,66 @@
+﻿<MetaDataEntity>
+    <StartForm>ruleEditor</StartForm>
+    <ComponentCategory>BusinessRule</ComponentCategory>
+    <Datas>
+        <MetaDataKeyValueEntity>
+            <Key>ruleCode</Key>
+            <Value>DemoShowMessage</Value>
+        </MetaDataKeyValueEntity>
+        <MetaDataKeyValueEntity>
+            <Key>ruleName</Key>
+            <Value>客户端规则示例_显示消息</Value>
+        </MetaDataKeyValueEntity>
+        <MetaDataKeyValueEntity>
+            <Key>version</Key>
+            <Value>1.0.0</Value>
+        </MetaDataKeyValueEntity>
+        <MetaDataKeyValueEntity>
+            <Key>isVisible</Key>
+            <Value>True</Value>
+        </MetaDataKeyValueEntity>
+        <MetaDataKeyValueEntity>
+            <Key>isEnabled</Key>
+            <Value>True</Value>
+        </MetaDataKeyValueEntity>
+        <MetaDataKeyValueEntity>
+            <Key>displayComponentType</Key>
+            <Value>Business</Value>
+        </MetaDataKeyValueEntity>
+        <MetaDataKeyValueEntity>
+            <Key>ruleType</Key>
+            <Value>Client</Value>
+        </MetaDataKeyValueEntity>
+        <MetaDataKeyValueEntity>
+            <Key>ruleCategory</Key>
+            <Value>web.other</Value>
+        </MetaDataKeyValueEntity>
+        <MetaDataKeyValueEntity>
+            <Key>description</Key>
+            <Value />
+        </MetaDataKeyValueEntity>
+        <MetaDataKeyValueEntity>
+            <Key>author</Key>
+            <Value />
+        </MetaDataKeyValueEntity>
+        <MetaDataKeyValueEntity>
+            <Key>runat</Key>
+            <Value>WinForm</Value>
+        </MetaDataKeyValueEntity>
+        <MetaDataKeyValueEntity>
+            <Key>transactionType</Key>
+            <Value>transaction</Value>
+        </MetaDataKeyValueEntity>
+        <MetaDataKeyValueEntity>
+            <Key>returnValue</Key>
+            <Value>&lt;ReturnValues /&gt;</Value>
+        </MetaDataKeyValueEntity>
+        <MetaDataKeyValueEntity>
+            <Key>matchCode</Key>
+            <Value>ClientRules.DemoShowMessage</Value>
+        </MetaDataKeyValueEntity>
+        <MetaDataKeyValueEntity>
+            <Key>matchVersion</Key>
+            <Value>1</Value>
+        </MetaDataKeyValueEntity>
+    </Datas>
+</MetaDataEntity>

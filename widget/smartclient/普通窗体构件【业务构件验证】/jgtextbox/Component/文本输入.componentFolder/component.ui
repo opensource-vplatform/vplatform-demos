@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<form type="1002" code="form1" isEntendable="false" owner="赵亚芬" IsLocked="False">
+  <propertys>
+    <property name="Width"><![CDATA[960]]></property>
+    <property name="Height"><![CDATA[450]]></property>
+    <property name="HeightSet"><![CDATA[StaticHeight]]></property>
+    <property name="LayoutType"><![CDATA[None]]></property>
+    <property name="TableName"><![CDATA[]]></property>
+    <property name="FormLoadAction"><![CDATA[]]></property>
+    <property name="FormCloseAction"><![CDATA[]]></property>
+    <property name="FormClosingAction"><![CDATA[]]></property>
+    <property name="BackColor"><![CDATA[]]></property>
+    <property name="Padding"><![CDATA[0, 0, 0, 0]]></property>
+    <property name="Name"><![CDATA[文本输入]]></property>
+    <property name="FormBorderStyle"><![CDATA[FixedSingle]]></property>
+    <property name="WindowState"><![CDATA[Normal]]></property>
+    <property name="MaximizeBox"><![CDATA[True]]></property>
+    <property name="RefResources"><![CDATA[]]></property>
+    <property name="ThemeVar"><![CDATA[]]></property>
+  </propertys>
+  <controls>
+    <JGButton Code="JGButton2" LabelText="修改实体值" Width="89" PercentHeight="5.8%" PercentWidth="9.3%" Top="256" Left="569" TabIndex="2" OnClick="JGButton2_OnClick" LastModifiedTime="2019-05-06 14:51:30" LastModifiedUser="赵亚芬" />
+    <JGButton Code="JGButton1" LabelText="获取实体值" Width="89" PercentHeight="5.8%" PercentWidth="9.3%" Top="256" Left="438" TabIndex="1" OnClick="JGButton1_OnClick" LastModifiedTime="2019-05-06 14:51:28" LastModifiedUser="赵亚芬" />
+    <JGTextBoxEs Code="JGTextBoxEs1" Top="240" Left="131" Width="288" Height="42" PercentHeight="9.3%" PercentWidth="30%" TableName="dataSource" ColumnName="value" DefaultValue="&quot;这是默认值&quot;" Enabled="True" LabelText="文本aaaaab3" Readonly="False" TextLength="10" LabelVisible="True" OnEnter="JGTextBoxEs1_OnEnter" OnLeave="JGTextBoxEs1_OnLeave" OnLabelClick="JGTextBoxEs1_OnLabelClick" OnValueChanged="JGTextBoxEs1_OnValueChanged" OnValueLoaded="JGTextBoxEs1_OnValueLoaded" OnKeyDown="JGTextBoxEs1_OnKeyDown" />
+  </controls>
+  <outputs />
+  <inputs />
+  <remark><![CDATA[]]></remark>
+</form>

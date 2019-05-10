@@ -1,0 +1,277 @@
+﻿<ComponentStatistics code="serverrule_consoleprint" name="服务端规则示例_控制台打印" desc="">
+    <windows>
+        <window type="1" code="ruleEditor" name="规则编辑器" desc="" isExtendable="false">
+            <propertys>
+                <property name="Width" code="Width">960</property>
+                <property name="Height" code="Height">450</property>
+                <property name="HeightSet" code="HeightSet">StaticHeight</property>
+                <property name="LayoutType" code="LayoutType">None</property>
+                <property name="BackColor" code="BackColor"></property>
+                <property name="Padding" code="Padding">0, 0, 0, 0</property>
+                <property name="Name" code="Name">规则编辑器</property>
+                <property name="FormBorderStyle" code="FormBorderStyle">FixedSingle</property>
+                <property name="WindowState" code="WindowState">Normal</property>
+                <property name="MaximizeBox" code="MaximizeBox">True</property>
+                <property name="RefResources" code="RefResources"></property>
+                <property name="Code" code="Code">ruleEditor</property>
+            </propertys>
+            <controls>
+                <control code="JGTextBox1" name="提示信息" type="JGTextBox" desc="Toone-1545983592000">
+                    <propertys>
+                        <property name="控件编码" code="Code">JGTextBox1</property>
+                        <property name="默认值" code="DefaultValue"></property>
+                        <property name="显示格式" code="DisplayFormat">{"numType":"0","displayFormat":"","Index":"0"}</property>
+                        <property name="泊靠" code="Dock">None</property>
+                        <property name="使能" code="Enabled">True</property>
+                        <property name="高度" code="Height">190</property>
+                        <property name="必填" code="IsMust">false</property>
+                        <property name="必填样式外观" code="IsMustBehavior">Striking</property>
+                        <property name="标签背景色" code="LabelBackColor" />
+                        <property name="标签字体" code="LabelFontStyle" />
+                        <property name="标签前景色" code="LabelForeColor" />
+                        <property name="标题" code="LabelText">提示信息</property>
+                        <property name="标签对齐方式" code="LabelTextAlign">Left</property>
+                        <property name="显示标题" code="LabelVisible">True</property>
+                        <property name="标签宽度" code="LabelWidth">94</property>
+                        <property name="左边距" code="Left">40</property>
+                        <property name="百分比高度" code="PercentHeight">42.2%</property>
+                        <property name="百分比宽度" code="PercentWidth">36.9%</property>
+                        <property name="只读" code="ReadOnly">false</property>
+                        <property name="界面顺序号" code="TabIndex">0</property>
+                        <property name="文本长度" code="TextLength">255</property>
+                        <property name="浮动提示" code="ToolTip"></property>
+                        <property name="上边距" code="Top">72</property>
+                        <property name="值背景色" code="ValueBackColor" />
+                        <property name="值字体" code="ValueFontStyle" />
+                        <property name="值前景色" code="ValueForeColor" />
+                        <property name="值格式规范" code="ValueFormat"></property>
+                        <property name="值对齐方式" code="ValueTextAlign">Left</property>
+                        <property name="显示" code="Visible">True</property>
+                        <property name="宽度" code="Width">354</property>
+                    </propertys>
+                    <controls />
+                    <events>
+                        <event code="OnValueChanged" name="值改变事件">
+                            <evaluateRule />
+                        </event>
+                        <event code="OnValueLoaded" name="值加载事件">
+                            <evaluateRule />
+                        </event>
+                        <event code="OnLabelClick" name="单击标题">
+                            <evaluateRule />
+                        </event>
+                        <event code="OnKeyDown" name="键盘按下">
+                            <evaluateRule />
+                        </event>
+                        <event code="OnEnter" name="获取焦点">
+                            <evaluateRule />
+                        </event>
+                        <event code="OnLeave" name="失去焦点">
+                            <evaluateRule />
+                        </event>
+                    </events>
+                    <dataBindings>
+                        <dataBinding>
+                            <dataSource>ruleData</dataSource>
+                            <dataMembers>
+                                <dataMember name="字段名称" code="ColumnName">message</dataMember>
+                            </dataMembers>
+                        </dataBinding>
+                    </dataBindings>
+                </control>
+            </controls>
+            <events>
+                <event code="FormLoadAction" name="窗体加载事件">
+                    <evaluateRule />
+                </event>
+                <event code="FormCloseAction" name="窗体关闭后事件">
+                    <evaluateRule />
+                </event>
+                <event code="FormClosingAction" name="窗体关闭前事件">
+                    <evaluateRule />
+                </event>
+            </events>
+            <logics>
+                <logic type="client">
+                    <ruleSets>
+                        <ruleSet code="GetComponentSchemaData" name="" desc="" isExtendable="false" isRuleChainVisible="false">
+                            <ruleRoute xmlns:q1="http://www.w3.org/2001/XMLSchema" p9:type="q1:string" xmlns:p9="http://www.w3.org/2001/XMLSchema-instance">&lt;evaluateRule code="BR_SetEntityVarControlValue2" /&gt;</ruleRoute>
+                            <ruleInstances>
+                                <ruleInstance ruleCode="SetEntityVarControlValue" ruleName="给界面实体/控件/变量赋值" instanceCode="BR_SetEntityVarControlValue2" instanceName="给界面实体/控件/变量赋值" isNeedLog="False" isEnabled="True" transactionType="none">
+                                    <condition></condition>
+                                    <ruleConfig>{"FieldMap":[{"TargetType":"5","Target":"ruleData","SourceType":"entityField","SourceEntityType":"window","Source":"ruleData","entityFieldMapping":[{"destFieldName":"message","srcValueType":"entityField","srcValue":"ruleData.message"}]}]}</ruleConfig>
+                                </ruleInstance>
+                            </ruleInstances>
+                            <routeContext />
+                            <inputs />
+                            <outputs>
+                                <variables>
+                                    <variable code="ruleData" name="规则信息" type="entity" desc="" initValue="" />
+                                </variables>
+                                <dataTypes>
+                                    <dataType code="ruleData">
+                                        <element code="id" name="" type="char" length="255" precision="0" desc="" />
+                                        <element code="message" name="" type="char" length="255" precision="0" desc="" />
+                                    </dataType>
+                                </dataTypes>
+                            </outputs>
+                        </ruleSet>
+                    </ruleSets>
+                </logic>
+                <logic type="client">
+                    <ruleSets>
+                        <ruleSet code="GetViewSnapshotData" name="" desc="" isExtendable="false" isRuleChainVisible="false">
+                            <ruleRoute xmlns:q2="http://www.w3.org/2001/XMLSchema" p9:type="q2:string" xmlns:p9="http://www.w3.org/2001/XMLSchema-instance">&lt;Root /&gt;</ruleRoute>
+                            <ruleInstances />
+                            <routeContext />
+                            <inputs />
+                            <outputs />
+                        </ruleSet>
+                    </ruleSets>
+                </logic>
+                <logic type="client">
+                    <ruleSets>
+                        <ruleSet code="InitViewData" name="" desc="" isExtendable="false" isRuleChainVisible="false">
+                            <ruleRoute xmlns:q3="http://www.w3.org/2001/XMLSchema" p9:type="q3:string" xmlns:p9="http://www.w3.org/2001/XMLSchema-instance">&lt;evaluateRule code="BR_ExecExpression1" /&gt;</ruleRoute>
+                            <ruleInstances>
+                                <ruleInstance ruleCode="ExecExpression" ruleName="执行函数/表达式" instanceCode="BR_ExecExpression1" instanceName="执行函数/表达式" isNeedLog="False" isEnabled="True" transactionType="none">
+                                    <condition></condition>
+                                    <ruleConfig>{"expression":"VarToEntity(BR_IN_PARENT.input)"}</ruleConfig>
+                                </ruleInstance>
+                            </ruleInstances>
+                            <routeContext />
+                            <inputs>
+                                <variables>
+                                    <variable code="input" name="" type="char" desc="" initValue="" enumValue="" />
+                                </variables>
+                                <dataTypes />
+                            </inputs>
+                            <outputs />
+                        </ruleSet>
+                    </ruleSets>
+                </logic>
+            </logics>
+            <entitys>
+                <entity code="ruleData" name="ruleData" chineseName="规则信息" isExtendable="false">
+                    <entityFields>
+                        <entityField code="id" name="id" chineseName="" type="char" length="255" precision="" defaultValue="">
+                            <expression></expression>
+                        </entityField>
+                        <entityField code="message" name="message" chineseName="" type="char" length="255" precision="" defaultValue="">
+                            <expression></expression>
+                        </entityField>
+                    </entityFields>
+                    <events>
+                        <event code="OnLoaded" name="实体加载事件" />
+                    </events>
+                </entity>
+            </entitys>
+            <dataBindings>
+                <dataBinding>
+                    <dataSource />
+                </dataBinding>
+            </dataBindings>
+            <windowVariants>
+                <variables />
+                <dataTypes />
+            </windowVariants>
+            <windowOutputs>
+                <variables />
+                <dataTypes />
+            </windowOutputs>
+            <expressions>
+                <expression content="VarToEntity(BR_IN_PARENT.input)" type="client" />
+            </expressions>
+        </window>
+    </windows>
+    <models />
+    <querys />
+    <logics />
+    <expressions />
+    <resources />
+    <manifest>
+        <bundle-info>
+            <symbolic-name>serverrule_consoleprint</symbolic-name>
+            <bundle-name>服务端规则示例_控制台打印</bundle-name>
+            <bundle-version>1.0.0</bundle-version>
+            <bundle-type>DesignSchema</bundle-type>
+            <bundle-metadata>&lt;MetaDataEntity&gt;
+    &lt;StartForm&gt;ruleEditor&lt;/StartForm&gt;
+    &lt;ComponentCategory&gt;BusinessRule&lt;/ComponentCategory&gt;
+    &lt;Forms&gt;
+        &lt;MetaDataFormEntity&gt;
+            &lt;Code&gt;ruleEditor&lt;/Code&gt;
+            &lt;Name&gt;规则编辑器&lt;/Name&gt;
+            &lt;FilePath&gt;规则编辑器&lt;/FilePath&gt;
+        &lt;/MetaDataFormEntity&gt;
+    &lt;/Forms&gt;
+    &lt;Datas&gt;
+        &lt;MetaDataKeyValueEntity&gt;
+            &lt;Key&gt;ruleCode&lt;/Key&gt;
+            &lt;Value&gt;DemoConsolePrint&lt;/Value&gt;
+        &lt;/MetaDataKeyValueEntity&gt;
+        &lt;MetaDataKeyValueEntity&gt;
+            &lt;Key&gt;ruleName&lt;/Key&gt;
+            &lt;Value&gt;服务端规则示例_控制台打印&lt;/Value&gt;
+        &lt;/MetaDataKeyValueEntity&gt;
+        &lt;MetaDataKeyValueEntity&gt;
+            &lt;Key&gt;version&lt;/Key&gt;
+            &lt;Value&gt;1.0.0&lt;/Value&gt;
+        &lt;/MetaDataKeyValueEntity&gt;
+        &lt;MetaDataKeyValueEntity&gt;
+            &lt;Key&gt;isVisible&lt;/Key&gt;
+            &lt;Value&gt;True&lt;/Value&gt;
+        &lt;/MetaDataKeyValueEntity&gt;
+        &lt;MetaDataKeyValueEntity&gt;
+            &lt;Key&gt;isEnabled&lt;/Key&gt;
+            &lt;Value&gt;True&lt;/Value&gt;
+        &lt;/MetaDataKeyValueEntity&gt;
+        &lt;MetaDataKeyValueEntity&gt;
+            &lt;Key&gt;displayComponentType&lt;/Key&gt;
+            &lt;Value&gt;Business&lt;/Value&gt;
+        &lt;/MetaDataKeyValueEntity&gt;
+        &lt;MetaDataKeyValueEntity&gt;
+            &lt;Key&gt;ruleType&lt;/Key&gt;
+            &lt;Value&gt;Server&lt;/Value&gt;
+        &lt;/MetaDataKeyValueEntity&gt;
+        &lt;MetaDataKeyValueEntity&gt;
+            &lt;Key&gt;ruleCategory&lt;/Key&gt;
+            &lt;Value&gt;web.other&lt;/Value&gt;
+        &lt;/MetaDataKeyValueEntity&gt;
+        &lt;MetaDataKeyValueEntity&gt;
+            &lt;Key&gt;description&lt;/Key&gt;
+            &lt;Value /&gt;
+        &lt;/MetaDataKeyValueEntity&gt;
+        &lt;MetaDataKeyValueEntity&gt;
+            &lt;Key&gt;author&lt;/Key&gt;
+            &lt;Value /&gt;
+        &lt;/MetaDataKeyValueEntity&gt;
+        &lt;MetaDataKeyValueEntity&gt;
+            &lt;Key&gt;runat&lt;/Key&gt;
+            &lt;Value&gt;Component&lt;/Value&gt;
+        &lt;/MetaDataKeyValueEntity&gt;
+        &lt;MetaDataKeyValueEntity&gt;
+            &lt;Key&gt;transactionType&lt;/Key&gt;
+            &lt;Value&gt;transaction&lt;/Value&gt;
+        &lt;/MetaDataKeyValueEntity&gt;
+        &lt;MetaDataKeyValueEntity&gt;
+            &lt;Key&gt;returnValue&lt;/Key&gt;
+            &lt;Value&gt;&amp;lt;ReturnValues /&amp;gt;&lt;/Value&gt;
+        &lt;/MetaDataKeyValueEntity&gt;
+        &lt;MetaDataKeyValueEntity&gt;
+            &lt;Key&gt;matchCode&lt;/Key&gt;
+            &lt;Value&gt;ServerRules.DemoConsolePrint&lt;/Value&gt;
+        &lt;/MetaDataKeyValueEntity&gt;
+        &lt;MetaDataKeyValueEntity&gt;
+            &lt;Key&gt;matchVersion&lt;/Key&gt;
+            &lt;Value&gt;1&lt;/Value&gt;
+        &lt;/MetaDataKeyValueEntity&gt;
+    &lt;/Datas&gt;
+&lt;/MetaDataEntity&gt;</bundle-metadata>
+            <provider>zhaoy</provider>
+            <description />
+            <lastModified>1557107237000</lastModified>
+        </bundle-info>
+        <dependencies />
+    </manifest>
+</ComponentStatistics>

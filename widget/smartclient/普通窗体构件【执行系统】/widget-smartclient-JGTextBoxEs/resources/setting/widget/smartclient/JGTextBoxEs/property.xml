@@ -1,0 +1,69 @@
+<definition>
+	<propertys>
+		<!-- 静态属性 -->
+		<property name="IsAtomicType" defaultValue="true" type="string" required="false" canEmpty="true" desc="是否原子"/>
+		<!-- 静态属性 -->
+		<!-- UI属性 -->
+		<property name="Code" type="code" required="true" canEmpty="false" desc="控件名称"/>
+		<property name="Height" type="number"  required="true" canEmpty="true" desc="高度"/>
+		<property name="Width" type="number"  required="true" canEmpty="false" desc="宽度"/>
+		<property name="Top" type="number"  required="true" canEmpty="true" desc="上边距"/>
+		<property name="Left" type="number"  required="true" canEmpty="true" desc="左边距"/>
+		<property name="PercentWidth" type="string"  required="true" canEmpty="true" desc="百分比宽度"/>
+		<property name="PercentHeight" type="string"  required="true" canEmpty="true" desc="百分比高度"/>
+		<property name="LabelText" type="string" required="true" canEmpty="true" desc="标题"/>
+		<property name="Enabled" type="boolean" required="true" canEmpty="true" desc="使能"/>
+		<property name="ReadOnly" type="boolean" required="true" canEmpty="false" desc="只读"/>
+		<property name="TextLength" type="number" required="true" canEmpty="true" desc="文本长度"/>
+		<property name="LabelVisible" type="boolean" required="true" canEmpty="true" desc="显示标题"/>
+		<property name="DefaultValue" type="string" required="true" canEmpty="true" desc="默认值"/>
+		<property name="LabelWidth" type="number" required="true" canEmpty="true" desc="标题宽度(%)"/>
+		<!-- 
+		<property name="Placeholder" type="string" required="true" canEmpty="true" desc="提醒文字"/>
+		<property name="InputSize" type="string" required="true" canEmpty="true" desc="高度尺寸"/>
+		<property name="LabelPosition" type="string" required="true" canEmpty="false" desc="标签位置"/>
+		<property name="LabelFontStyle" type="font" required="true" canEmpty="false" desc="标题字体"/>
+		<property name="LabelBackColor" type="color" required="true" canEmpty="false" desc="标题背景色"/>
+		<property name="LabelForeColor" type="color" required="true" canEmpty="false" desc="标题前景色"/>
+		<property name="IsMust" type="boolean" required="true" canEmpty="false" desc="必填"/>
+		<property name="InputIconValue" type="string"  required="false" canEmpty="true" desc="输入框图标"/>
+		<property name="LabelIconValue" type="string"  required="false" canEmpty="true" desc="标签图标"/>
+		<property name="LabelIconPosition" type="string"  required="false" canEmpty="true" desc="标签图标位置"/>
+		<property name="DisplayScale" type="string" required="true" canEmpty="false" desc="宽度比例"/>
+		<property name="Spacing" type="padding" required="true" canEmpty="false" desc="布局间距"/>
+		 -->
+		<!-- UI属性 -->
+		
+		<!-- 事件 -->
+		<property name="OnEnter" type="event" required="true" canEmpty="true" desc="获取焦点"/>
+        <property name="OnLabelClick" type="event" required="true" canEmpty="true" desc="单击标题"/>
+        <property name="OnValueChanged" type="event" required="true" canEmpty="true" desc="值改变事件"/>
+        <property name="OnValueLoaded" type="event" required="true" canEmpty="true" desc="值加载事件"/>
+        <property name="OnKeyDown" type="event" required="true" canEmpty="true" desc="键盘按下"/>
+        <property name="OnLeave" type="event" required="true" canEmpty="true" desc="焦点移开"/>
+		<!-- 事件 -->
+		
+		<!-- 数据 -->
+		<property name="TableName" type="tableName" required="true" canEmpty="true" desc="实体"/>
+		<property name="ColumnName" type="columnName" required="true" canEmpty="true" desc="字段名称"/>
+		<!-- 数据 -->
+		
+	</propertys>
+	<events>
+		<event name="OnEnter" desc="获取焦点"/>
+		<event name="OnLabelClick" desc="单击标题"/>
+		<event name="OnValueChanged" desc="值改变事件"/>
+		<event name="OnValueLoaded" desc="值加载事件"/>
+		<event name="OnKeyDown" desc="键盘按下"/>
+		<event name="OnLeave" desc="失去焦点"/>
+	</events>
+	<dataBindings>
+		<dataBinding name="datasource" required="false">
+			<storeType>singleRecord</storeType>
+			<dataSource name="TableName" canEmpty="true" desc="实体"/>
+			<dataMembers>
+				<dataMember name="ColumnName" type="String" canEmpty="true" isRelation="false" desc="字段名称"/>
+			</dataMembers>
+		</dataBinding>
+	</dataBindings>
+</definition>

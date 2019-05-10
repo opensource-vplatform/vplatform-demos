@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1557108755665
+Build-Jdk: 1.6.0_23
+Built-By: zhaoy
+Bundle-ManifestVersion: 2
+Bundle-Name: Serverrule_DemoConsolePrint
+Bundle-SymbolicName: com.toone.v3.platform-Serverrule_DemoConsolePrint
+Bundle-Version: 3.3.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: com.toone.itop.formula.rule.inte;uses:="com.toone.itop.f
+ ormula.spi,com.toone.itop.rule.apiserver.model,com.toone.itop.rule.spis
+ erver,com.toone.vcore.component.annotations";version="3.3.0.SNAPSHOT"
+Import-Package: com.toone.itop.formula.spi;version="[3.3,4)",com.toone.i
+ top.rule.apiserver.model;version="[3.3,4)",com.toone.itop.rule.spiserve
+ r;version="[3.3,4)",com.toone.util;version="[3.2,4)",com.toone.vcore.co
+ mponent.annotations;version="[1.0,2)"
+MatchCode: ServerRules.DemoConsolePrint
+MatchVersion: 1
+MinMatchVersion: 1
+Tool: Bnd-2.1.0.20130426-122213

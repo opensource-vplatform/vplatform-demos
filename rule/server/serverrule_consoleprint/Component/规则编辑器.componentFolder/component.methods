@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--Created: 2019/4/23 10:58:41-->
+<Methods>
+  <Method Code="GetComponentSchemaData" Type="Client" InterfaceType="Local" RestrictType="Private" IsExtendable="false" IsRuleChainVisible="false">
+    <Description><![CDATA[]]></Description>
+    <Remark><![CDATA[]]></Remark>
+    <MethodChain><![CDATA[
+  <evaluateRule code="BR_SetEntityVarControlValue2" />
+]]></MethodChain>
+    <RuleInstances>
+      <RuleInstance ruleCode="SetEntityVarControlValue" ruleName="给界面实体/控件/变量赋值" instanceCode="BR_SetEntityVarControlValue2" instanceName="给界面实体/控件/变量赋值" isNeedLog="False" isEnabled="True" isDebug="False" lastModifiedUser="zhaoy" lastModifiedTime="2019-04-23 14:04:01">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"FieldMap":[{"TargetType":"5","Target":"ruleData","SourceType":"entityField","SourceEntityType":"window","Source":"ruleData","entityFieldMapping":[{"destFieldName":"message","srcValueType":"entityField","srcValue":"ruleData.message"}]}]}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtFieldMap><TargetType>5</TargetType><Target>ruleData</Target><SourceType>entityField</SourceType><SourceEntityType>window</SourceEntityType><Source>ruleData</Source><SourceEntityXml><![CDATA[<dsDestFieldMapping><dtDestFieldMapping><destField>message</destField><srcValueType>entityField</srcValueType><srcValue>ruleData.message</srcValue></dtDestFieldMapping></dsDestFieldMapping>]]]]><![CDATA[></SourceEntityXml></dtFieldMap></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+    </RuleInstances>
+    <Outputs>
+      <Variable code="ruleData" name="规则信息" fieldType="entity" initValue="" isMust="false" desc="">
+        <Entity>
+          <Field code="id" name="" fieldType="char" length="255" accuracy="">
+            <description><![CDATA[]]></description>
+          </Field>
+          <Field code="message" name="" fieldType="char" length="255" accuracy="">
+            <description><![CDATA[]]></description>
+          </Field>
+        </Entity>
+      </Variable>
+    </Outputs>
+  </Method>
+  <Method Code="GetViewSnapshotData" Type="Client" InterfaceType="Local" RestrictType="Private" IsExtendable="false" IsRuleChainVisible="false">
+    <Description><![CDATA[]]></Description>
+    <Remark><![CDATA[]]></Remark>
+    <MethodChain><![CDATA[]]></MethodChain>
+    <RuleInstances />
+  </Method>
+  <Method Code="InitViewData" Type="Client" InterfaceType="Local" RestrictType="Private" IsExtendable="false" IsRuleChainVisible="false">
+    <Description><![CDATA[]]></Description>
+    <Remark><![CDATA[]]></Remark>
+    <MethodChain><![CDATA[
+  <evaluateRule code="BR_ShowMessage1" />
+  <evaluateRule code="BR_ExecExpression1" />
+]]></MethodChain>
+    <RuleInstances>
+      <RuleInstance ruleCode="ShowMessage" ruleName="显示设置的提示信息" instanceCode="BR_ShowMessage1" instanceName="显示设置的提示信息" isNeedLog="False" isEnabled="False" isDebug="False">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"showType":"0","time":"3","simpleChinesePrompt":{"msgnote":"BR_IN_PARENT.input","type":"1"}}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><MsgType>0</MsgType><SimpleChinese>BR_IN_PARENT.input</SimpleChinese><SimpleChinesetype>1</SimpleChinesetype><ShowTime>3</ShowTime></dtMaster></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+      <RuleInstance ruleCode="ExecExpression" ruleName="执行函数/表达式" instanceCode="BR_ExecExpression1" instanceName="执行函数/表达式" isNeedLog="False" isEnabled="True" isDebug="False">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"expression":"VarToEntity(BR_IN_PARENT.input)"}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><expression>VarToEntity(BR_IN_PARENT.input)</expression></dtMaster></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+    </RuleInstances>
+    <Inputs>
+      <Variable code="input" name="" fieldType="char" initValue="" isMust="false" desc="" />
+    </Inputs>
+  </Method>
+</Methods>

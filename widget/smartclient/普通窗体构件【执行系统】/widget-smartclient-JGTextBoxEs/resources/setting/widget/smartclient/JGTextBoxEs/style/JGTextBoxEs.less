@@ -1,0 +1,83 @@
+.@{WidgetStyle}{
+	height:@input-height-base;
+}
+.@{WidgetStyle}Text,
+.@{WidgetStyle}TextDisabled,
+.@{WidgetStyle}TextError,
+.@{WidgetStyle}TextErrorFocused,
+.@{WidgetStyle}TextFocused,
+.@{WidgetStyle}CellErrorFocused,
+.@{WidgetStyle}CellError,
+.@{WidgetStyle}TextHint,
+.@{WidgetStyle}TextDisabledHint,
+.@{WidgetStyle}TextReadOnlyHint,
+.@{WidgetStyle}TextErrorHint,
+.@{WidgetStyle}TextErrorHintFocused,
+.@{WidgetStyle}TextHintFocused,
+.@{WidgetStyle}CellErrorHintFocused,
+.@{WidgetStyle}CellErrorHint,
+.@{WidgetStyle}TextReadOnly{
+	.vFormDapping();
+    outline: none;
+	.vFormValueBorder();
+	.vFormValue();
+    .vFormValueBackColor();
+    
+    .addFont(@ValueFontStyleFamily,@ValueFontStyleSize,@ValueFontStyleBold,@ValueFontStyleItalic,@ValueFontStyleDecoration);   
+	.addBackColor(@ValueBackColor);
+	.addColor(@ValueForeColor);
+}
+.@{WidgetStyle}CellError:hover,
+.@{WidgetStyle}CellErrorFocused:hover,
+.@{WidgetStyle}CellErrorHint:hover,
+.@{WidgetStyle}CellErrorHintFocused:hover,
+.@{WidgetStyle}Text:hover,
+.@{WidgetStyle}TextError:hover,
+.@{WidgetStyle}TextErrorFocused:hover,
+.@{WidgetStyle}TextErrorHint:hover,
+.@{WidgetStyle}TextErrorHintFocused:hover,
+.@{WidgetStyle}TextFocused:hover,
+.@{WidgetStyle}TextHint:hover,
+.@{WidgetStyle}TextHintFocused:hover,
+.@{WidgetStyle}TextReadOnly:hover,
+.@{WidgetStyle}TextReadOnlyHint:hover {
+	.vFormValueHover();	
+}
+.@{WidgetStyle}TextErrorFocused,
+.@{WidgetStyle}TextError{
+	.vFormErrorTestDapping();
+}
+.@{WidgetStyle}TextFocused{
+    .vFormValueBorderFocused();
+}
+.@{WidgetStyle}TextDisabled{
+    .vFormValueDisabled();
+}
+.@{WidgetStyle}TextReadOnly{
+   .vFormValueReadOnly();
+   .addColor(@ValueForeColor);
+}
+.@{WidgetStyle}CellErrorFocused,
+.@{WidgetStyle}CellError{
+	.vFormErrorCellDapping();
+    .vFormValueBorderError();
+}
+.@{WidgetStyle}TitleError,
+.@{WidgetStyle}TitleDisabled,
+.@{WidgetStyle}TitleFocused,
+.@{WidgetStyle}TitleReadOnly,
+.@{WidgetStyle}Title{	
+	.vFormLable();
+	.addFont(@LabelFontStyleFamily,@LabelFontStyleSize,@LabelFontStyleBold,@LabelFontStyleItalic,@LabelFontStyleDecoration);
+    .addColor(@LabelForeColor);
+	.addBackColor(@LabelBackColor);
+}
+.@{WidgetStyle}TitleReadOnly{
+  .vFormLableReadOnly();
+}
+.@{WidgetStyle}TitleDisabled{
+    .vFormLableDisabled();
+}
+.@{WidgetStyle}Required{
+   .vFormRequired();
+}

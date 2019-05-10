@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<parent>
+		<groupId>com.toone.v3.platform</groupId>
+		<artifactId>platform-parent</artifactId>
+		<version>3.4.0-SNAPSHOT</version>
+	</parent>
+	<modelVersion>4.0.0</modelVersion>
+	<name>com.toone.v3.platform-Serverfunc_DemoFunc</name>
+	<groupId>com.toone.v3.platform</groupId>
+	<artifactId>Serverfunc_DemoFunc</artifactId>
+	<version>3.3.0-SNAPSHOT</version>
+	<packaging>bundle</packaging>
+	<properties>
+		<bundle.name></bundle.name>
+		<bundle.description></bundle.description>
+		<bundle.attributeExtend description='example:[{"key":"akey","value":"aa"},{"key":"bkey","value":"bb"}]'></bundle.attributeExtend>
+	</properties>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>maven-bundle-plugin</artifactId>
+				<configuration>
+					<instructions>
+						<Include-Resource>resources=resources,extension=extension</Include-Resource>
+						<MatchCode>ServerFunctions.DemoFunc</MatchCode>
+						<MatchVersion>1</MatchVersion>
+						<MinMatchVersion>1</MinMatchVersion>
+					</instructions>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	
+	<dependencies>
+		<dependency>
+			<groupId>com.toone.v3.platform</groupId>
+			<artifactId>01core</artifactId>
+			<version>3.3.8</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.toone.v3.platform</groupId>
+			<artifactId>03pojo</artifactId>
+			<version>3.2.0</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.toone.v3.platform</groupId>
+			<artifactId>07service</artifactId>
+			<version>3.3.9</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.toone.v3.platform</groupId>
+			<artifactId>01test</artifactId>
+			<version>3.1.1-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
+	
+</project>

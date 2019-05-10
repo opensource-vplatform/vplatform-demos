@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Methods>
+  <Method MethodDir="ControlMethod" FileName="JGButton1_OnClick.method" Code="JGButton1_OnClick" Name="JGButton1_单击事件" />
+  <Method MethodDir="ControlMethod" FileName="JGButton2_OnClick.method" Code="JGButton2_OnClick" Name="JGButton2_单击事件" />
+  <Method MethodDir="ControlMethod" FileName="JGTextBoxEs1_OnEnter.method" Code="JGTextBoxEs1_OnEnter" Name="JGTextBoxEs1_获取焦点事件" />
+  <Method MethodDir="ControlMethod" FileName="JGTextBoxEs1_OnKeyDown.method" Code="JGTextBoxEs1_OnKeyDown" Name="JGTextBoxEs1_键盘按下事件" />
+  <Method MethodDir="ControlMethod" FileName="JGTextBoxEs1_OnLabelClick.method" Code="JGTextBoxEs1_OnLabelClick" Name="JGTextBoxEs1_单击标题事件" />
+  <Method MethodDir="ControlMethod" FileName="JGTextBoxEs1_OnLeave.method" Code="JGTextBoxEs1_OnLeave" Name="JGTextBoxEs1_焦点移开事件" />
+  <Method MethodDir="ControlMethod" FileName="JGTextBoxEs1_OnValueChanged.method" Code="JGTextBoxEs1_OnValueChanged" Name="JGTextBoxEs1_值改变事件" />
+  <Method MethodDir="ControlMethod" FileName="JGTextBoxEs1_OnValueLoaded.method" Code="JGTextBoxEs1_OnValueLoaded" Name="JGTextBoxEs1_值加载事件" />
+</Methods>

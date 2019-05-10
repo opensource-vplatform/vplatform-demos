@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-16"?>
+<NavigationInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Nodes>
+    <NavigationNode>
+      <Code>form1</Code>
+      <NodeType>Component</NodeType>
+      <FileSystemObjectType>File</FileSystemObjectType>
+      <FileSystemObjectName>文本输入</FileSystemObjectName>
+      <SubNodes />
+    </NavigationNode>
+  </Nodes>
+</NavigationInfo>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Methods>
+  <Method MethodDir="UserMethod" FileName="GetComponentSchemaData.method" Code="GetComponentSchemaData" Name="" />
+  <Method MethodDir="UserMethod" FileName="GetViewSnapshotData.method" Code="GetViewSnapshotData" Name="" />
+  <Method MethodDir="UserMethod" FileName="InitViewData.method" Code="InitViewData" Name="" />
+</Methods>

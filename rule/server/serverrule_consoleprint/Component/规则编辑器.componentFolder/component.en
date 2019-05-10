@@ -1,0 +1,30 @@
+﻿<EntityConfig version="2.0">
+  <Entitys>
+    <Entity Code="ruleData" Name="规则信息" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="">
+      <Columns>
+        <Column>
+          <Code>id</Code>
+          <Name></Name>
+          <DataType>char</DataType>
+          <Length>255</Length>
+          <Precision></Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+        </Column>
+        <Column>
+          <Code>message</Code>
+          <Name></Name>
+          <DataType>char</DataType>
+          <Length>255</Length>
+          <Precision></Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+        </Column>
+      </Columns>
+      <Events>
+        <EntityEvent Code="OnLoaded" Value="" />
+      </Events>
+    </Entity>
+  </Entitys>
+  <Relations />
+</EntityConfig>

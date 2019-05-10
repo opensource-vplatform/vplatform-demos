@@ -1,0 +1,28 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1557132701428
+Build-Jdk: 1.6.0_23
+Built-By: zhaoyf
+Bundle-ManifestVersion: 2
+Bundle-Name: widget-smartclient-JGTextBoxEs
+Bundle-SymbolicName: com.toone.v3.platform-widget-smartclient-JGTextBoxE
+ s
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+MatchCode: ComponentControls.JGTextBoxEs
+MatchVersion: 1
+MinMatchVersion: 1
+Tool: Bnd-2.1.0.20130426-122213
+VJS-Package: [{"Builder": {"builderName":"vjs.builder.implementation.wid
+ get","configs":{"series":"smartclient","path":["data","action"],"widget
+ Type":"JGTextBoxEs"}},"BundleName":"JGTextBoxEsAction","Dependencies":{
+ "vjs.framework.extension.platform.services.view.widget.common.context" 
+ : null,"vjs.framework.extension.platform.services.view.event" : null,"v
+ js.framework.extension.platform.services.view.widget.common.logic.datas
+ ource" : null,"vjs.framework.extension.platform.services.view.logic.dat
+ asource" : null,"vjs.framework.extension.platform.services.vmmapping.ma
+ nager" : null,"vjs.framework.extension.platform.services.view.widget.co
+ mmon.logic.eventhandler":null}},{"Builder": {"builderName":"vjs.builder
+ .implementation.widget","configs":{"series":"smartclient","path":["rend
+ er"],"widgetType":"JGTextBoxEs"}},"BundleName":"JGTextBoxEs","Dependenc
+ ies":{"vjs.framework.extension.ui.common.plugin.services.renderer":null
+ }}]

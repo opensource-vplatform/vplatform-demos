@@ -1,0 +1,28 @@
+﻿<EntityConfig version="2.0">
+  <Entitys>
+    <Entity Code="dataSource" Name="" IsExtendable="false" EntityType="" TableOrQueryCode="" TemplateId="" TemplateCode="">
+      <Columns>
+        <Column>
+          <Code>value</Code>
+          <Name></Name>
+          <DataType>char</DataType>
+          <Length>255</Length>
+          <Precision></Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+        </Column>
+      </Columns>
+      <Datas>
+        <row>
+          <Fields>
+            <Field Code="value"><![CDATA[aaaa]]></Field>
+          </Fields>
+        </row>
+      </Datas>
+      <Events>
+        <EntityEvent Code="OnLoaded" Value="" />
+      </Events>
+    </Entity>
+  </Entitys>
+  <Relations />
+</EntityConfig>

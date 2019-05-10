@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>widget-smartclient-JGTextBoxEs</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>org.eclipse.m2e.core.maven2Builder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.toone.vplatform.builder.v3ProjectBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+		<nature>org.eclipse.m2e.core.maven2Nature</nature>
+		<nature>com.toone.vplatform.builder.v3ProjectNature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>resources/page/itop/common/smartclient/extra/thirdpart/textbox/js/jquery-3.2.1.js</name>
+			<type>1</type>
+			<location>D:/work/v平台二次开发vui/2019/3D模型/toone/本地部署文件/20190422/web/lib/jquery-3.2.1.js</location>
+		</link>
+		<link>
+			<name>resources/page/itop/common/smartclient/extra/thirdpart/textbox/js/loader.js</name>
+			<type>1</type>
+			<location>D:/work/v平台二次开发vui/2019/3D模型/toone/本地部署文件/20190422/web/lib/loader.js</location>
+		</link>
+	</linkedResources>
+</projectDescription>

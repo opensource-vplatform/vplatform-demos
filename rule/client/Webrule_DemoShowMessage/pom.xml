@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<parent>
+		<groupId>com.toone.v3.platform</groupId>
+		<artifactId>vjs.package.maven.pom.base</artifactId>
+		<version>3.4.0-SNAPSHOT</version>
+	</parent>
+	<modelVersion>4.0.0</modelVersion>
+	<name>com.toone.v3.platform-Webrule_DemoShowMessage</name>
+	<groupId>com.toone.v3.platform</groupId>
+	<artifactId>Webrule_DemoShowMessage</artifactId>
+	<version>3.3.0-SNAPSHOT</version>
+	<packaging>bundle</packaging>
+	<properties>
+		<bundle.name></bundle.name>
+		<bundle.description></bundle.description>
+		<bundle.attributeExtend description='example:[{"key":"akey","value":"aa"},{"key":"bkey","value":"bb"}]'></bundle.attributeExtend>
+	</properties>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>maven-bundle-plugin</artifactId>
+				<configuration>
+					<instructions>
+						<Include-Resource>resources=resources,extension=extension</Include-Resource>
+						<VJS-Package>{
+							"Builder":{
+								"builderName":"vjs.builder.implementation.rule",
+								"configs":{}
+							},
+							"BundleName":"DemoShowMessage",
+							"Dependencies":{
+								"vjs.framework.extension.util.json":null
+							}
+						}</VJS-Package>
+						<MatchCode>ClientRules.DemoShowMessage</MatchCode>
+						<MatchVersion>1</MatchVersion>
+						<MinMatchVersion>1</MinMatchVersion>
+					</instructions>
+				</configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-source-plugin</artifactId>
+				<executions>
+					<execution>
+						<phase></phase>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>	
+</project>

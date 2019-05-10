@@ -1,0 +1,39 @@
+﻿<ComponentStatistics code="serverfunctions_demofunc" name="服务端示例" desc="">
+    <windows />
+    <models />
+    <querys />
+    <logics />
+    <expressions />
+    <resources />
+    <manifest>
+        <bundle-info>
+            <symbolic-name>serverfunctions_demofunc</symbolic-name>
+            <bundle-name>服务端示例</bundle-name>
+            <bundle-version>1.0.0</bundle-version>
+            <bundle-type>DesignSchema</bundle-type>
+            <bundle-metadata>&lt;MetaDataEntity&gt;
+    &lt;ComponentCategory&gt;Function&lt;/ComponentCategory&gt;
+    &lt;Forms /&gt;
+    &lt;Datas&gt;
+        &lt;MetaDataKeyValueEntity&gt;
+            &lt;Key&gt;xml&lt;/Key&gt;
+            &lt;Value&gt;&amp;lt;ExpressionFunction language="zh-CN" VersionTime="" Version="1.0.0.0" IsFunctionComponent="0" DisplayType="Server" Runat="WinForm" MatchCode="ServerFunctions.DemoFunc" MatchVersion="1"&amp;gt;
+  &amp;lt;Function code="DemoFunc" name="服务端示例函数" isVisible="true" paramCount="2" returnType="number" typePath="系统函数|系统数字函数" processFunctionName="" isSecondaryDev="true"&amp;gt;
+    &amp;lt;Example&amp;gt;&amp;lt;![CDATA[]]&amp;gt;&amp;lt;/Example&amp;gt;
+    &amp;lt;Remark&amp;gt;&amp;lt;![CDATA[]]&amp;gt;&amp;lt;/Remark&amp;gt;
+    &amp;lt;Params&amp;gt;
+      &amp;lt;Param order="1" type="number" remark="加数1" isMust="0" /&amp;gt;
+      &amp;lt;Param order="2" type="number" remark="加数2" isMust="0" /&amp;gt;
+    &amp;lt;/Params&amp;gt;
+  &amp;lt;/Function&amp;gt;
+&amp;lt;/ExpressionFunction&amp;gt;&lt;/Value&gt;
+        &lt;/MetaDataKeyValueEntity&gt;
+    &lt;/Datas&gt;
+&lt;/MetaDataEntity&gt;</bundle-metadata>
+            <provider>zhaoy</provider>
+            <description />
+            <lastModified>1557042766000</lastModified>
+        </bundle-info>
+        <dependencies />
+    </manifest>
+</ComponentStatistics>

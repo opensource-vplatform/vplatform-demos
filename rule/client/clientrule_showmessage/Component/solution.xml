@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-16"?>
+<NavigationInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Nodes>
+    <NavigationNode>
+      <Code>ruleEditor</Code>
+      <NodeType>Component</NodeType>
+      <FileSystemObjectType>File</FileSystemObjectType>
+      <FileSystemObjectName>规则编辑器</FileSystemObjectName>
+      <SubNodes />
+    </NavigationNode>
+  </Nodes>
+</NavigationInfo>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Component code="clientrule_showmessage" name="客户端规则示例_显示消息" version="1.0.0" type="Function" category="BusinessRule">
+  <Provider><![CDATA[zhaoy]]></Provider>
+  <Description><![CDATA[]]></Description>
+  <References />
+  <UpgradeItemRoot>
+    <UpgradeItem DataVersion="1" PluginKeyValue="Toone.V3.DevSystem.EntityDesigner" BranchValueKey="" />
+    <UpgradeItem DataVersion="2" PluginKeyValue="Toone.V3.DevSystem.RefSearch" BranchValueKey="" />
+    <UpgradeItem DataVersion="7" PluginKeyValue="Toone.V3.DevSystem.FormDesignManager" BranchValueKey="" />
+    <UpgradeItem DataVersion="3" PluginKeyValue="Toone.V3.DevSystem.MethodEditor" BranchValueKey="ExecuteRuleSet" />
+    <UpgradeItem DataVersion="3" PluginKeyValue="Toone.V3.DevSystem.MethodEditor" BranchValueKey="OpenComponentReturnData" />
+    <UpgradeItem DataVersion="4" PluginKeyValue="Toone.V3.DevSystem.MethodEditor" BranchValueKey="" />
+  </UpgradeItemRoot>
+</Component>

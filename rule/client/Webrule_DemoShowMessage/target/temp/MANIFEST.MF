@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1557105224135
+Build-Jdk: 1.6.0_23
+Built-By: zhaoy
+Bundle-ManifestVersion: 2
+Bundle-Name: Webrule_DemoShowMessage
+Bundle-SymbolicName: com.toone.v3.platform-Webrule_DemoShowMessage
+Bundle-Version: 3.3.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+MatchCode: ClientRules.DemoShowMessage
+MatchVersion: 1
+MinMatchVersion: 1
+Tool: Bnd-2.1.0.20130426-122213
+VJS-Package: {"Builder":{"builderName":"vjs.builder.implementation.rule"
+ ,"configs":{}},"BundleName":"DemoShowMessage","Dependencies":{"vjs.fram
+ ework.extension.util.json":null}}

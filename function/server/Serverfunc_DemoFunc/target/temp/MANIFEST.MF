@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1557042567499
+Build-Jdk: 1.6.0_23
+Built-By: zhaoy
+Bundle-ManifestVersion: 2
+Bundle-Name: Serverfunc_DemoFunc
+Bundle-SymbolicName: com.toone.v3.platform-Serverfunc_DemoFunc
+Bundle-Version: 3.3.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: com.toone.itop.formula.function.inte;uses:="com.toone.it
+ op.formula.spi,com.toone.vcore.component.annotations";version="3.3.0.SN
+ APSHOT"
+Import-Package: com.toone.itop.formula.spi;version="[3.3,4)",com.toone.i
+ top.systemlog.api;version="[3.3,4)",com.toone.vcore.component.annotatio
+ ns;version="[1.0,2)"
+MatchCode: ServerFunctions.DemoFunc
+MatchVersion: 1
+MinMatchVersion: 1
+Tool: Bnd-2.1.0.20130426-122213

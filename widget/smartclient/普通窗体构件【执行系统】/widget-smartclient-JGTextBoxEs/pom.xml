@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<parent>
+		<groupId>com.toone.v3.platform</groupId>
+		<artifactId>vjs.package.maven.pom.base</artifactId>
+		<version>3.2.0</version>
+	</parent>
+	<modelVersion>4.0.0</modelVersion>
+	<name>com.toone.v3.platform-widget-smartclient-JGTextBoxEs</name>
+	<groupId>com.toone.v3.platform</groupId>
+	<artifactId>widget-smartclient-JGTextBoxEs</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<packaging>bundle</packaging>
+	<properties>
+		<bundle.name>widget-smartclient-JGTextBoxEs</bundle.name>
+		<bundle.description>控件初始化</bundle.description>
+		<bundle.attributeExtend description='扩展属性值的格式为[{"key":"akey","value":"aa"},{"key":"bkey","value":"bb"}]'></bundle.attributeExtend>
+	</properties>
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-source-plugin</artifactId>
+				<executions>
+					<execution>
+						<phase/>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>maven-bundle-plugin</artifactId>
+				<configuration>
+					<instructions>
+						<VJS-Package>[{
+								"Builder": {
+									"builderName":"vjs.builder.implementation.widget",  
+									"configs":{
+										"series":"smartclient",
+										"path":["data","action"],
+										"widgetType":"JGTextBoxEs"
+									}                 
+								},     
+								"BundleName":"JGTextBoxEsAction",
+								"Dependencies":{
+									"vjs.framework.extension.platform.services.view.widget.common.context" : null,
+									"vjs.framework.extension.platform.services.view.event" : null,
+									"vjs.framework.extension.platform.services.view.widget.common.logic.datasource" : null,
+									"vjs.framework.extension.platform.services.view.logic.datasource" : null,
+									"vjs.framework.extension.platform.services.vmmapping.manager" : null,
+									"vjs.framework.extension.platform.services.view.widget.common.logic.eventhandler":null
+								}
+							},{
+								"Builder": {
+									"builderName":"vjs.builder.implementation.widget",  
+									"configs":{
+										"series":"smartclient",
+										"path":["render"],
+										"widgetType":"JGTextBoxEs"
+									}                 	
+								},     
+								"BundleName":"JGTextBoxEs",
+								"Dependencies":{
+									"vjs.framework.extension.ui.common.plugin.services.renderer":null
+								}
+							}]</VJS-Package>
+							<MatchCode>ComponentControls.JGTextBoxEs</MatchCode>
+							<MatchVersion>1</MatchVersion>
+							<MinMatchVersion>1</MinMatchVersion>
+					</instructions>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
