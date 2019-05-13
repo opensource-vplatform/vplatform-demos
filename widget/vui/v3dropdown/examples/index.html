@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="vendor/vplatform/assets/vue.js"></script>
+	<% var styles = htmlWebpackPlugin.options.resources.styles;if(styles){for(var i = 0,len=styles.length;i<len;i++){var style = styles[i]; %><link href="<%= style %>" rel="stylesheet"><% }} %>
+</head>
+<body>
+	<div id="app">
+	</div>
+	<% var scripts = htmlWebpackPlugin.options.resources.scripts;if(scripts){for(var i = 0,len=scripts.length;i<len;i++){var script = scripts[i]; %><script type="text/javascript" src="<%= script %>"></script><% }} %>
+</body>
+<script type="text/javascript">
+	new Vue({
+		el : "#app",
+		template : '<v3dropdown :title = "title" :dropSource = "dropSource" @on-click="click1"></v3dropdown>',
+		data : {
+			dropSource : ['test1','test2','test3','test4'],
+			title : '下拉菜单'
+		},
+		methods:{
+			click1:function(index){
+				alert(index);
+			}
+		}
+	});
+</script>
+</html>

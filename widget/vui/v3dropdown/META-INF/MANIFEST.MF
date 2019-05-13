@@ -1,0 +1,25 @@
+Bundle-Name: v3dropdown
+Bundle-SymbolicName: com.toone.v3.platform-vjs.framework.extension.pla
+ tform.custom.widget.v3dropdown
+Bundle-Version: 1.0.0.SNAPSHOT
+Manifest-Version: 1.0
+Built-By: chenf
+Bnd-LastModified: 1524464023260
+Created-By: Nodejs Plugin & v3-pack-cli 1.0.0
+Bundle-ManifestVersion: 2
+MatchCode: CustomPlugins.v3dropdown
+MatchVersion: 1
+MinMatchVersion: 1
+VJS-Package: [{"BundleName":null,"Builder":{"configs":{"test":"vjs/pac
+ kage/manager/vjsDefineXml-dev.xml","dev":"vjs/package/manager/vjsDefi
+ neXml-dev.xml","prd":"vjs/package/manager/vjsDefineXml-prd.xml"},"bui
+ lderName":"vjs.builder.implementation.runtime.xmlparser"},"Dependenci
+ es":{},"Provides":[]}]
+iPOJO-Components: instance { $component="widget.extension" property { 
+ $name="symbolicName" $value="vjs.framework.extension.platform.custom.
+ widget.v3dropdown" }property { $name="vjsNames" $type="list" property
+  { $value="vjs.framework.extension.platform.custom.widget.v3dropdown"
+  }}property { $name="resources" $type="list" property { $value="itop/
+ common/extension/custom/widget/v3dropdown/v3dropdown.css" }property {
+  $value="itop/common/extension/custom/widget/v3dropdown/v3dropdown.js
+ " }}property { $name="dependencies" $type="list" }}

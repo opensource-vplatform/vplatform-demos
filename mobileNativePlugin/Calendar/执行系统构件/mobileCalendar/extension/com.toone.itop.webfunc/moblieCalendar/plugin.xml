@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+	<extension point="com.toone.itop.webfunc">
+		<function code="Add">
+			<name></name>
+			<description></description>
+			<!-- funcType 实际值 web / server -->
+			<funcType>web</funcType>
+			
+			<className>com.toone.itop.formula.function.AddFunc</className>
+			<!-- 函数参数信息，以后再扩展 -->
+
+			<!-- 函数返回值信息，以后再扩展 -->
+
+			<!-- 异常描述信息，以后再扩展 -->
+			
+		</function>
+	</extension>
+</plugin>

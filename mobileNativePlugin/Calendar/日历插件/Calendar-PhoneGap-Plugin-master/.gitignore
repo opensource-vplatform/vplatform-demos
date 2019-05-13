@@ -1,0 +1,4 @@
+demo/platforms
+demo/plugins
+*.ipr
+.idea/

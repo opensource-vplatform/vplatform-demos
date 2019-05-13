@@ -1,0 +1,20 @@
+{
+	"scope": "all",
+	"groupId": "com.toone.v3.platform",
+	"matchVersion": 1,
+	"minMatchVersion": 1,
+	"account": "chenf",
+	"pwd": "chenfeng",
+	"out": "target",
+	"sources": "dist",
+	"libType": "2DEV",
+	"server": "http://chenf:8080",
+	"type": "widget",
+	"pluginCode": "v3dropdown",
+	"dependencies": [],
+	"symbolicName": "com.toone.v3.platform-vjs.framework.extension.platform.custom.v3dropdown",
+	"libs": [
+		"widget/v3dropdown.css",
+		"widget/v3dropdown.js"
+	]
+}

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VdevprojInfo>
+    <Projects>
+        <ComponentCode>plugindemo</ComponentCode>
+        <ComponentName>移动版插件demo</ComponentName>
+        <UpdateTime>2018-04-27 22:33:37</UpdateTime>
+        <CreatTime>2018-04-20 16:09:37</CreatTime>
+        <LastBuildTime>2018-04-21 15:45:34</LastBuildTime>
+        <NodeModulesVersion>7</NodeModulesVersion>
+        <NodeModulesFileCompleted>true</NodeModulesFileCompleted>
+    </Projects>
+    <Components>
+        <VdevprojComponentInfo>
+            <Code>form1</Code>
+            <Name>form1</Name>
+        </VdevprojComponentInfo>
+    </Components>
+</VdevprojInfo>

@@ -1,0 +1,36 @@
+﻿<form type="1003" mobiletype="Phone" code="test" IsLocked="False">
+  <propertys>
+    <property name="Width"><![CDATA[375]]></property>
+    <property name="Height"><![CDATA[667]]></property>
+    <property name="HeightSet"><![CDATA[StaticHeight]]></property>
+    <property name="LayoutType"><![CDATA[None]]></property>
+    <property name="TableName"><![CDATA[]]></property>
+    <property name="FormLoadAction"><![CDATA[]]></property>
+    <property name="FormCloseAction"><![CDATA[]]></property>
+    <property name="BackColor"><![CDATA[]]></property>
+    <property name="Name"><![CDATA[test]]></property>
+    <property name="CustomGridValue"><![CDATA[]]></property>
+    <property name="ImageValue"><![CDATA[]]></property>
+    <property name="ImagePosition"><![CDATA[contain]]></property>
+    <property name="ContentAlignment"><![CDATA[Center Center]]></property>
+    <property name="TileStyle"><![CDATA[None]]></property>
+    <property name="IsScrollFollow"><![CDATA[True]]></property>
+    <property name="Animation"><![CDATA[{"Effect":"None"}]]></property>
+    <property name="AnimationIn"><![CDATA[{"Effect":"HorizontalSlip","Delay":"0"}]]></property>
+    <property name="AnimationOut"><![CDATA[{"Effect":"HorizontalSlip","Delay":"0"}]]></property>
+    <property name="RefResources"><![CDATA[]]></property>
+    <property name="CreateFrom"><![CDATA[system]]></property>
+  </propertys>
+  <controls>
+    <JGMToolStrip Bottom="623" Code="JGMToolStrip1" DockType="Top" IsFixed="True" PercentHeight="6.6%" PercentWidth="100%" TabIndex="4" Width="375" ZIndex="1">
+      <JGMLabel Code="JGMLabel1" ForeColor="66, 133, 244" LabelText="日历插件" PercentHeight="100%" PercentWidth="100%" Width="375" />
+    </JGMToolStrip>
+    <JGMPanel Code="JGMPanel1" Direction="False" DisplayScale="12,12" Dock="Fill" Height="667" LayoutDirection="vertical" PercentHeight="100%" PercentWidth="100%" TabIndex="4">
+      <JGMButton Bottom="549" Code="JGMButton4" DisplayScale="12" LabelText="添加行程" Left="20" OnClick="JGMButton4_OnClick" PercentHeight="5.7%" PercentWidth="89.3%" Right="20" Spacing="20, 80, 20, 0" Top="80" Width="335" ZIndex="1" />
+      <JGMButton Bottom="461" Code="JGMButton3" DisplayScale="12" LabelText="打开日历" Left="20" OnClick="JGMButton1_OnClick_1_1" PercentHeight="5.7%" PercentWidth="89.3%" Right="20" Spacing="20, 50, 20, 0" Top="168" Width="335" />
+    </JGMPanel>
+  </controls>
+  <outputs />
+  <inputs />
+  <remark><![CDATA[]]></remark>
+</form>

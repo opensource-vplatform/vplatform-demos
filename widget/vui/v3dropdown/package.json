@@ -1,0 +1,26 @@
+{
+	"name": "v3dropdown",
+	"version": "1.0.0",
+	"description": "dropdown",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"v3:start": "v3 test",
+		"v3:package": "v3 webpack",
+		"v3:pack": "v3 pack",
+		"v3:test": "v3 test",
+		"v3:publish": "v3 publish",
+		"v3:apply": "v3 apply"
+	},
+	"script": {
+		"test": ""
+	},
+	"keywords": [
+		"dropdown"
+	],
+	"author": "chenf",
+	"license": "ISC",
+	"devDependencies": {
+		"v3-cli": "^1.0.1"
+	}
+}

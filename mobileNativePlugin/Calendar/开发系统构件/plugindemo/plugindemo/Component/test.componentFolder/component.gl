@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Methods>
+  <Method MethodDir="ControlMethod" FileName="JGMButton1_OnClick_1_1.method" Code="JGMButton1_OnClick_1_1" Name="JGMButton3_点击" />
+  <Method MethodDir="ControlMethod" FileName="JGMButton4_OnClick.method" Code="JGMButton4_OnClick" Name="JGMButton4_点击" />
+</Methods>
